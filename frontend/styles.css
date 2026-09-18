@@ -14,10 +14,11 @@ body {
 
 input,
 textarea {
-    background-color: #4A4A4A;
+    background-color: #322f2f;
     color: #D8D8D8;
     border: 1px solid #707070;
     border-radius: 8px;
+    margin-top: 10px;
 }
 
 h1 {
@@ -26,13 +27,14 @@ h1 {
 }
 
 button {
-    background-color: #4A4A4A;
+    background-color: #322f2f;
     color: #D8D8D8;
     border: 1px solid #707070;
     border-radius: 8px;
     padding: 10px 20px;
     font-family: "OCR A Extended", monospace;
     cursor: pointer;
+    margin-top:10px;
 }
 
 button:hover {
