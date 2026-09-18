@@ -20,11 +20,13 @@ textarea {
     border-radius: 8px;
     margin-top: 10px;
     font-size: 16px;
+    font-family: "OCR A Extended", monospace;
 }
 
 h1 {
     font-size: 48px;
     margin-bottom: 30px;
+    font-family: "OCR A Extended", monospace;
 }
 
 button {
@@ -37,6 +39,7 @@ button {
     cursor: pointer;
     margin-top:10px;
     font-size: 16px;
+    font-family: "OCR A Extended", monospace;
 }
 
 button:hover {
