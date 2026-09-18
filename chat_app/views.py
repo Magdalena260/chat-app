@@ -20,4 +20,8 @@ def chat_view(request):
         return JsonResponse(data, safe=False)
 
     if request.method == "POST":
-          data = json.loads(request.body)
+        data = json.loads(request.body)
+        chat = Chat.objects.create(
+        name=data["name"],
+        message=data["message"]
+    )
