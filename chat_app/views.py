@@ -13,15 +13,14 @@ def chat_view(request):
         data = list(chats.values())
         return JsonResponse(data, safe=False)
 
-    def chat_view(request):
-    if request.method == "GET":
-        chats = Chat.objects.all()
-        data = list(chats.values())
-        return JsonResponse(data, safe=False)
-
     if request.method == "POST":
         data = json.loads(request.body)
         chat = Chat.objects.create(
-        name=data["name"],
-        message=data["message"]
-    )
+            name=data["name"],
+            message=data["message"]
+        )
+
+        return JsonResponse(
+            {"message": "Chat created successfully"},
+            status=201
+        )
